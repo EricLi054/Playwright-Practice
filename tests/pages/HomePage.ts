@@ -44,4 +44,8 @@ export class HomePage {
         return lightCardText.includes('Light');
     }
 
+    async clickFormsSidebarButton() {
+        await this.page.locator('[title="Forms"]').click();
+        await this.page.locator('text=Form Layouts').click();
+    }
 }
