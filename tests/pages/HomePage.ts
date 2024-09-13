@@ -53,4 +53,29 @@ export class HomePage {
         await this.page.locator('[title="Forms"]').click();
         await this.page.getByText('Datepicker').click();
     }
+
+    async navigateToDialogPage() {
+        await this.page.getByText('Modal & Overlays').click();
+        await this.page.getByText('Dialog').click();
+    }
+
+    async navigateToWindowPage() {
+        await this.page.getByText('Modal & Overlays').click();
+        await this.page.getByText('Window').click();
+    }
+
+    async navigateToPopoverPage() {
+        await this.page.getByText('Modal & Overlays').click();
+        await this.page.getByText('Popover').click();
+    }
+
+    async navigateToToastrPage() {
+        await this.page.getByText('Modal & Overlays').click();
+        await this.page.getByText('Toastr').click();
+    }
+
+    async navigateToTooltipPage() {
+        await this.page.getByText('Modal & Overlays').click();
+        await this.page.getByText('Tooltip').click();
+    }
 }
