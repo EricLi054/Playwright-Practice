@@ -1,4 +1,3 @@
-// pages/FormsPage.ts
 import { Page } from '@playwright/test';
 
 export class FormsPage {

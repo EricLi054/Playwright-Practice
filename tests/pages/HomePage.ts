@@ -48,4 +48,9 @@ export class HomePage {
         await this.page.locator('[title="Forms"]').click();
         await this.page.locator('text=Form Layouts').click();
     }
+
+    async navigateToDatepickerPage() {
+        await this.page.locator('[title="Forms"]').click();
+        await this.page.getByText('Datepicker').click();
+    }
 }
