@@ -8,7 +8,7 @@ export class HomePage {
 
     constructor(page: Page) {
         this.page = page;
-        this.url = 'http://localhost:4200/pages/iot-dashboard';
+        this.url = '/';
         this.headingText = 'PW-test';
         this.title = 'IoT Dashboard';
     }
